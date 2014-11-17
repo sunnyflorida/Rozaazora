@@ -1,0 +1,343 @@
+@font-face {
+    font-family: Calibri; /* Имя шрифта */
+    src: url(../fonts/CALIBRIL.TTF); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Wonderland; /* Имя шрифта */
+    src: url(../fonts/Wonderland.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Zombie; /* Имя шрифта */
+    src: url(../fonts/MCNaitPR.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: denistina; /* Имя шрифта */
+    src: url(../fonts/denistina.ttf); /* Путь к файлу со шрифтом */
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+article, aside, div, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+html, body {
+  font-family: Calibri, calibriregular,Helvetica,Arial;
+  height: 100%;
+}
+.wrapper {
+  height: 100%;
+  height: auto !important;
+  min-height: 100%;
+  overflow: hidden;
+  min-width: 500px;
+}
+.null {
+  clear: both;
+  margin-top: 50px;
+}
+
+/* HEADER--------------------------------------------------*/
+.alert {
+padding: 8px;
+/* margin-bottom: 20px; */
+border: 1px solid transparent;
+border-radius: 4px;
+margin-bottom: 0px;
+margin-top: 0px;
+height: 60;
+}
+
+.navbar-form {
+/* padding: 10px 15px; */
+margin-top: 8px;
+margin-right: -15px;
+margin-bottom: 8px;
+margin-left: -15px;
+border-top: 1px solid transparent;
+border-bottom: 1px solid transparent;
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+
+.navbar {
+position: relative;
+height: 50px;
+/* margin-bottom: 20px; */
+margin-top: 10px;
+border: 1px solid transparent;
+margin-bottom: 0px;
+}
+
+.glyphicon {
+height: 50;
+position: relative;
+top: 0px;
+display: inline-block;
+font-family: 'Glyphicons Halflings';
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+	height: 100%;
+	min-height: 100%;
+	height: auto !important;
+}
+/* PRODUCT ---------------------------------------------------------------------------------------*/
+.product_photo {
+	max-width: 100%;
+	max-height: 700px;
+	background-color: #eee;
+}
+.big_product_image {
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+}
+
+.big_product_image  > img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.product_photo .row {
+	padding: 15px 15px 15px 0;
+}
+.product_photo .row img {
+	float: right;
+}
+.info {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: rgb(255,255,255);
+	border: 2px solid rgb(0,0,0);
+	z-index: 3;
+	text-align: center;
+	position: absolute;
+	right: 10%;
+	bottom: 10%;
+}
+.pop-up {
+	width: 400px;
+	height: 250px;
+	background-color: rgb(255,255,255);
+	border: 7px solid rgb(166,166,166);
+	position: absolute;
+	bottom: 15%;
+	left: 15%;
+	z-index: 55;
+	padding: 10px;
+}
+.product_description p {
+	text-align: center;
+}
+.product_option_image {
+	width: 100%;
+	height: 220px;
+	overflow: hidden;
+}
+.product_option_image img {
+	width: 100%;
+	height: auto;
+}
+
+
+/*CONTACTS----------------------------------------------------------------------- */
+.image {
+	max-width: 100%;
+	max-height: 100%;
+	overflow: hidden;
+}
+.image img{
+	width: 100%;
+}
+input[name="name"] {
+	margin: 0 0 20px 0;
+	width: 100%;
+}
+input[name="phone_number"] {
+	width: 100%;
+}
+textarea {
+	width: 100%;
+	margin: 0 0 20px 0;
+}
+.contacts > div > p > a {
+	display: inline-block;
+	border-bottom: 1px dashed #555;
+}
+.contacts > div > p > a:first-child {
+	margin-right: 50px;
+}
+.input_row {
+	margin-top: 50px;
+}
+
+
+/* Map ----------------------------------------------------------*/
+
+#map-canvas,
+#map-canvas2 {
+	width: 100%;
+	height: 500px;
+}
+.map {
+	padding: 0;
+	width: 600px;
+}
+/*ALL PRODUCTS-----------------------------------------------------*/
+.products_all figure {
+	height: 350px;
+	overflow: hidden;
+}
+.products_all figure img {
+	width: 100%;
+	height: 80%;
+	min-width: 80%;
+}
+.products_all figure figcaption {
+	height: 20%;
+}
+
+
+/* ONE CARD------------------------------------------------ */
+
+textarea[name="greeting"] {
+	width: 50%;
+}
+.greeting_styled {
+	height: 80px;
+	width: 500px;
+	background-color: #ddd;
+	border: 5px solid #666;
+	padding: 15px;
+}
+.card .product_photo {
+	max-width: 100%;
+	max-height: 400px;
+	overflow: hidden;
+}
+.card .product_photo .big_product_image {
+	max-width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+.card .product_photo .big_product_image img {
+	max-height: 100%;
+	max-width: 70%;
+}
+
+
+/*CART--------------------------------------------------------*/
+.well_prod figure {
+	position: relative;
+}
+.well_prod figure button,
+.well_card figure button {
+	position: absolute;
+	top: 0;
+	right: 25%;
+	border-radius: 50%;
+}
+.well_card > div:first-child,
+.well_prod > div:first-child {
+	overflow: hidden;
+}
+.well_card > div:first-child img,
+.well_prod > div:first-child img {
+	width: 100%;
+}
+/*PAYMENTS-------------------------------------------------------*/
+.payments > div {
+	overflow: hidden;
+}
+.payments > div img {
+	max-width: 100%;
+}
+
+/*ORDER------------------------------------------------*/
+input[name="name_reciever"],
+input[name="address_reciever"],
+input[name="phone_reciever"],
+input[name="another_phone_reciever"],
+input[name="name_client"],
+input[name="phone_client"] {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+/* MODAL WINDOW --------------------------------------*/
+.modal_div {
+	width: 700px; 
+	height: 500px; /* Размеры должны быть фиксированы */
+	border-radius: 5px;
+	border: 1px solid #000 ;
+	background: #fff;
+	position: fixed; /* чтобы окно было в видимой зоне в любом месте */
+	top: 45%; /* отступаем сверху 45%, остальные 5% подвинет скрипт */
+	left: 50%; /* половина экрана слева */
+	margin-top: -250px;
+	margin-left: -350px; /* тут вся магия центровки css, отступаем влево и вверх минус половину ширины и высоты соответственно =) */
+	display: none; /* в обычном состоянии окна не должно быть */
+	opacity: 0; /* полностью прозрачно для анимирования */
+	z-index: 5; /* окно должно быть наиболее большем слое */
+	padding: 10px;
+}
+/* Кнопка закрыть для тех кто в танке) */
+.modal_div #modal_close {
+	width: 70px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	cursor: pointer;
+	display: block;
+}
+.modal_div #modal_close b {
+	display: inline-block;
+	background-color: rgb(240,240,240);
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: -3px;
+}
+/* Подложка */
+#overlay {
+	z-index: 3; /* подложка должна быть выше слоев элементов сайта, но ниже слоя модального окна */
+	position: fixed; /* всегда перекрывает весь сайт */
+	background-color: #000; /* черная */
+	opacity: 0.8; /* но немного прозрачна */
+	width: 100%; 
+	height: 100%; /* размером во весь экран */
+	top: 0; 
+	left: 0; /* сверху и слева 0, обязательные свойства! */
+	cursor: pointer;
+	display: none; /* в обычном состоянии её нет) */
+}
