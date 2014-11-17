@@ -1,17 +1,21 @@
  $(document).ready(function(){
     $(".pop-up").hide();
     $(".info").on('click', function(){
-    	 $(".pop-up").toggle(500);
+    	 $(".pop-up").toggle();
  	});
 	
 
-	$('input:radio').change(
-	    function(){
-	        var src = $(this).parent().parent().find('.product_option_image img').attr('src');
+	$('input:radio').change(function(){
+	    var src = $(this).parent().parent().find('.product_option_image img').attr('src');
 			$(".big_product_image").children('img').attr('src',src);   
 	    }
-	);          
+	);    
 
+  $('.product_option_image').on('click',function(){
+      var src = $(this).children('img').attr('src');
+      $(".big_product_image").children('img').attr('src',src);   
+      }
+  );        
  });
 
 

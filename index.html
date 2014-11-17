@@ -19,75 +19,81 @@
 </head>
 <body>
 <div class="wrapper">
-       <div class="container">
-        
+  <header class="row">
+    <div class="container">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <a href="index.html">LOGO</a>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
         <div class="row">
-              <div class="col-lg-3 logo">
-                <a href="#">LOGO</a>
-              </div>
-           <div class="col-lg-offset-8 right-head  text-right">
-                <a href="#">Авторизация</a>   <a href="#">Регистрация</a>
-             <form class="navbar-form navbar-left pull-right" role="search">
-                <div class="form-group">
-                   <input type="text" class="form-control" placeholder="Search">
-                </div>
-                   <button type="submit" class="btn btn-default">Submit</button>
-             </form>
-                   <div class="telephone pull-right">+375 44 596-33-03</div>
-           </div>
+          <div class="col-lg-3 col-lg-offset-6 col-md-3 col-md-offset-6">
+            <a href="#">Авторизация</a>   
+            <a href="#">Регистрация</a>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <a class="alert alert-success pull-right" role="alert" href="cart.html">
+              <h4>Корзина:</h4>
+              <p>0 р.</p><p>0 товаров</p>
+            </a>
+          </div>
+        </div> <!-- row -->
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-8">
+            <a href="tel:+375445963303">+375 44 596-33-03</a>
+            <select class="selectpicker pull-right">
+              <option>BYR</option>
+              <option>USD</option>
+              <option>EUR</option>
+            </select>
+          </div>
         </div>
-       </div>
+      </div>
+    </div> <!-- end container -->
+  </header>
 
 <div class="row">
   <nav class="navbar navbar-default" role="navigation">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="col-lg-8">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>         
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-           <ul class="nav navbar-nav">
+    <div class="container">
+      <div class="col-lg-9">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>         
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
             <li class="active"><a class="glyphicon glyphicon-home" href="index.html"></a></li>
-            <li><a href="#">Каталог</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Подарки <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="cards.html">открытки</a></li>
-                <li><a href="#">шоколад</a></li>
-                <li><a href="#">Игрушки</a></li>
-                <li><a href="#">Мыло</a></li>
+                <li><a href="chocolate.html">шоколад</a></li>
+                <li><a href="toys.html">Игрушки</a></li>
+                <li><a href="soap.html">Мыло</a></li>
+                <li><a href="baloons.html">Шарики</a></li>
+                <li><a href="champain.html">Шампанское</a></li>
+                <li><a href="souvenirs.html">Сувениры</a></li>
+                <li><a href="vase.html">Вазы</a></li>
+                <li><a href="buckets.html">Корзинки</a></li>
               </ul>
             </li>
             <li><a href="about.html">О нас</a></li>
-            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="delivery.html.html">Оплата и доставка</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
-          </div>
-       </div>
-
-      <div class="col-lg-2">      
-      <select class="selectpicker pull-right">
-        <option>BYR</option>
-        <option>USD</option>
-        <option>EUR</option>
-      </select>
-       </div>
-
-       <div class="col-lg-2">
-           <a class="alert alert-success pull-right" role="alert" href="cart.html">
-            <h4>Корзина:</h4>
-            <p>0 р. | 0 товаров</p>
-           </a>
-       </div>
-
-        
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <form class="form-inline pull-right">
+          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Search">
+          <button class="input-group-addon">S</button>
+        </form>
+      </div>
+    </div><!-- /.container -->
+  </nav>
+</div><!-- /.row -->
 
 
 <div id="carousel-example-caption" class="carousel slide" data-ride="carousel">
@@ -96,8 +102,7 @@
     <li data-target="#carousel-example-caption" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-caption" data-slide-to="1"></li>
     <li data-target="#carousel-example-caption" data-slide-to="2"></li>
-     </ol>
-
+  </ol>
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
@@ -122,7 +127,6 @@
       </div>
    </div>
   </div>
-
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-caption" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -131,227 +135,244 @@
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 </div>
+
 <div class="container">
-<div class="row">
 
-    <div class="col-md-4 text-center">
-        <a href="#"><img src="img\flower1.jpg" alt="букет 1"></a>
-            <div class="caption">
-            <a href="product.html"><h4>Букет 1 >></h4></a>
-            <p>300 000 б.р.</p>
-            </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+        <a href="product.html">
+          <figure>
+            <img src="img\flower1.jpg" alt="букет 1">
+            <figcaption>
+              <h4>Букет 1 >></h4></a>
+              <p>300 000 б.р.</p>
+            </figcaption>
+          </figure>
+        </a>
     </div>
-
-    <div class="col-md-4 text-center">
-        <a href="#"><img src="img\flower1.jpg" alt="букет 2"></a>
-            <div class="caption">
-            <a href="card.html"><h4>Букет 2</h4></a>
-            <p>1 500 000</p>
-          </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+        <a href="product.html">
+          <figure>
+            <img src="img\flower1.jpg" alt="букет 1">
+            <figcaption>
+              <h4>Букет 1 >></h4></a>
+              <p>300 000 б.р.</p>
+            </figcaption>
+          </figure>
+        </a>
     </div>
-
-    <div class="col-md-4 text-center">
-        <a href="#"><img src="img\flower1.jpg" alt="букет 3"></a>
-            <div class="caption">
-            <a href="#"><h4>Букет 3</h4></a>
-            <p>2 500 000</p>
-            </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+        <a href="product.html">
+          <figure>
+            <img src="img\flower1.jpg" alt="букет 1">
+            <figcaption>
+              <h4>Букет 1 >></h4></a>
+              <p>300 000 б.р.</p>
+            </figcaption>
+          </figure>
+        </a>
     </div>
-</div>
+  </div>
 
-<div class="row">
-
-        <div class="col-md-8">
-           <div class="well">
-             <img src="img\banner.jpg" alt="баннер"> 
-           </div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="well">
+        <img src="img\banner.jpg" alt="баннер"> 
+      </div>
+    </div>
+    <div class="col-md-4 text-center">
+      <a href="#"><img src="img\flower1.jpg" alt="букет 4"></a>
+        <div class="caption">
+          <a href="#"><h4>Букет 4 >></h4></a>
+          <p>300 000 б.р.</p>
         </div>
-
-        <div class="col-md-4 text-center">
-        <a href="#"><img src="img\flower1.jpg" alt="букет 4"></a>
-            <div class="caption">
-            <a href="#"><h4>Букет 4 >></h4></a>
-            <p>300 000 б.р.</p>
-            </div>
-        </div>
-
     </div>
+  </div>
 
-<div class="row">
-
-    <div class="col-md-4 text-center">
-        <a href="#"><img src="img\flower1.jpg" alt="букет 5"></a>
-            <div class="caption">
-            <a href="#"><h4>Букет 5 >></h4></a>
-            <p>300 000 б.р.</p>
-            </div>
+  <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+          <a href="product.html">
+            <figure>
+              <img src="img\flower1.jpg" alt="букет 1">
+              <figcaption>
+                <h4>Букет 1 >></h4></a>
+                <p>300 000 б.р.</p>
+              </figcaption>
+            </figure>
+          </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+          <a href="product.html">
+            <figure>
+              <img src="img\flower1.jpg" alt="букет 1">
+              <figcaption>
+                <h4>Букет 1 >></h4></a>
+                <p>300 000 б.р.</p>
+              </figcaption>
+            </figure>
+          </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+          <a href="product.html">
+            <figure>
+              <img src="img\flower1.jpg" alt="букет 1">
+              <figcaption>
+                <h4>Букет 1 >></h4></a>
+                <p>300 000 б.р.</p>
+              </figcaption>
+            </figure>
+          </a>
+      </div>
     </div>
-
-    <div class="col-md-4 text-center">
-        <a href="#"><img src="img\flower1.jpg" alt="букет 6"></a>
-            <div class="caption">
-            <a href="#"><h4>Букет 6</h4></a>
-            <p>1 500 000</p>
-          </div>
-    </div>
-
-    <div class="col-md-4 text-center">
-        <a href="#"><img src="img\flower1.jpg" alt="букет 7"></a>
-            <div class="caption">
-            <a href="#"><h4>Букет 7</h4></a>
-            <p>2 500 000</p>
-            </div>
-    </div>
-</div>
 
     <div class="row">
-
-        <div class="col-md-4 text-center">
-        <a href="#"><img src="img\flower1.jpg" alt="букет 8"></a>
-            <div class="caption">
-            <a href="#"><h4>Букет 8 >></h4></a>
-            <p>300 000 б.р.</p>
-            </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+          <a href="product.html">
+            <figure>
+              <img src="img\flower1.jpg" alt="букет 1">
+              <figcaption>
+                <h4>Букет 1 >></h4></a>
+                <p>300 000 б.р.</p>
+              </figcaption>
+            </figure>
+          </a>
+      </div>
+      <div class="col-md-8">
+        <div class="well">
+          <img src="img\banner.jpg" alt="баннер"> 
         </div>
+      </div>
+      </div>
 
-        <div class="col-md-8">
-           <div class="well">
-             <img src="img\banner.jpg" alt="баннер"> 
-           </div>
-        </div>
-
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+          <a href="product.html">
+            <figure>
+              <img src="img\flower1.jpg" alt="букет 1">
+              <figcaption>
+                <h4>Букет 1 >></h4></a>
+                <p>300 000 б.р.</p>
+              </figcaption>
+            </figure>
+          </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+          <a href="product.html">
+            <figure>
+              <img src="img\flower1.jpg" alt="букет 1">
+              <figcaption>
+                <h4>Букет 1 >></h4></a>
+                <p>300 000 б.р.</p>
+              </figcaption>
+            </figure>
+          </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+          <a href="product.html">
+            <figure>
+              <img src="img\flower1.jpg" alt="букет 1">
+              <figcaption>
+                <h4>Букет 1 >></h4></a>
+                <p>300 000 б.р.</p>
+              </figcaption>
+            </figure>
+          </a>
+      </div>
     </div>
 
-<div class="row">
-
-    <div class="col-md-4 text-center">
-        <a href="#"><img src="img\flower1.jpg" alt="букет 9"></a>
-            <div class="caption">
-            <a href="#"><h4>Букет 9 >></h4></a>
-            <p>300 000 б.р.</p>
-            </div>
-    </div>
-
-    <div class="col-md-4 text-center">
-        <a href="#"><img src="img\flower1.jpg" alt="букет 10"></a>
-            <div class="caption">
-            <a href="#"><h4>Букет 10</h4></a>
-            <p>1 500 000</p>
-          </div>
-    </div>
-
-    <div class="col-md-4 text-center">
-        <a href="#"><img src="img\flower1.jpg" alt="букет 11"></a>
-            <div class="caption">
-            <a href="#"><h4>Букет 11</h4></a>
-            <p>2 500 000</p>
-            </div>
-    </div>
-</div>
-
-</div><!-- END WRAPPER -->
+</div><!-- END container -->
+</div> <!-- end wrapper -->
 <hr>
 <!-- footer -->
-<footer class="row">
-
-  <div class="col-md-4">
-      <div class="well">
-        <h4>г. Минск, ул. Киселева 10</h4>
-        <p>+375 44 596-33-03</p>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+          <div class="well">
+            <h4>г. Минск, ул. Киселева 10</h4>
+            <p>+375 44 596-33-03</p>
+          </div>
       </div>
-  </div>
-
-  <div class="col-md-4">
-      <div class="well">
-        <h4>г. Минск, пр-т Независимости, 186</h4>
-        <p>+375 29 336-33-03</p>
-        <p>+375 17 268-61-38</p>
+      <div class="col-md-4">
+          <div class="well">
+            <h4>г. Минск, пр-т Независимости, 186</h4>
+            <p>+375 29 336-33-03</p>
+            <p>+375 17 268-61-38</p>
+          </div>
       </div>
-  </div>
-
-  <div class="col-md-4">
-      <div class="well">
-        <p>www.rozaazora.by</p>
-        <p>info@rozaazpra.by</p>
-        <div class="social">
-          <a href="#"><img src="img/facebook.png" alt="Мы в facebook"></a>
-          <a href="#"><img src="img/vk.png" alt="Мы В Контакте"></a>
-          <a href="#"><img src="img/instagram.png" alt="Мы В instagram"></a>
-        </div>
+      <div class="col-md-4">
+          <div class="well">
+            <p>www.rozaazora.by</p>
+            <p>info@rozaazpra.by</p>
+            <div class="social">
+              <a href="#"><img src="img/facebook.png" alt="Мы в facebook"></a>
+              <a href="#"><img src="img/vk.png" alt="Мы В Контакте"></a>
+              <a href="#"><img src="img/instagram.png" alt="Мы В instagram"></a>
+            </div>
+          </div>
       </div>
-  </div>
-
-  
-
-</div>
+    </div>
 
 <hr>
 
-<div class="row">
-
- <div class="col-md-3">
-      <ul class="list-unstyled">
-        <li><h4>Меню:</h4></li>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Букеты</a></li>
-        <li><a href="#">Подарки</a></li>
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Оплата и доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+    <div class="row">
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><h4>Меню:</h4></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Букеты</a></li>
+          <li><a href="gifts.html">Подарки</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="delivery.html.html">Оплата и доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><h4>Повод:</h4></li>
+          <li><a href="">Свадьба</a></li>
+          <li><a href="#">День Рождения</a></li>
+          <li><a href="#">Просто так</a></li>
+          <li><a href="#">"Прости меня"</a></li>
+          <li><a href="#">"Люблю тебя"</a></li>
+          <li><a href="#">Halloween</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><h4>Кому букет:</h4></li>
+          <li><a href="#">Маме</a></li>
+          <li><a href="#">Любимой</a></li>
+          <li><a href="#">Ребёнку</a></li>
+          <li><a href="#">Мужчине</a></li>
+          <li><a href="#">Начальнику</a></li>
+          <li><a href="#">Коллеге</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li><h4>Цветы:</h4></li>
+          <li><a href="#">Розы</a></li>
+          <li><a href="#">Орхидеи</a></li>
+          <li><a href="#">Тюльпаны</a></li>
+          <li><a href="#">Герберы</a></li>
+          <li><a href="#">Хризантемы</a></li>
+          <li><a href="#">Лилии</a></li>
+        </ul>
+      </div>
     </div>
 
-<div class="col-md-3">
-      <ul class="list-unstyled">
-        <li><h4>Повод:</h4></li>
-        <li><a href="#">Свадьба</a></li>
-        <li><a href="#">День Рождения</a></li>
-        <li><a href="#">Просто так</a></li>
-        <li><a href="#">"Прости меня"</a></li>
-        <li><a href="#">"Люблю тебя"</a></li>
-        <li><a href="#">Halloween</a></li>
-      </ul>
-    </div>
-
-    <div class="col-md-3">
-      <ul class="list-unstyled">
-        <li><h4>Кому букет:</h4></li>
-        <li><a href="#">Маме</a></li>
-        <li><a href="#">Любимой</a></li>
-        <li><a href="#">Ребёнку</a></li>
-        <li><a href="#">Мужчине</a></li>
-        <li><a href="#">Начальнику</a></li>
-        <li><a href="#">Коллеге</a></li>
-      </ul>
-    </div>
-
-    <div class="col-md-3">
-      <ul class="list-unstyled">
-        <li><h4>Цветы:</h4></li>
-        <li><a href="#">Розы</a></li>
-        <li><a href="#">Орхидеи</a></li>
-        <li><a href="#">Тюльпаны</a></li>
-        <li><a href="#">Герберы</a></li>
-        <li><a href="#">Хризантемы</a></li>
-        <li><a href="#">Лилии</a></li>
-      </ul>
-    </div>
-
-    </footer>
+</footer>
 
 <hr>
 
-<div class="row text-right">
+<div class="row text-right container">
    Создание и продвижение сайтов 
    <a href="#">IntellectIT</a>
 </div>
 
 
-
-
-          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-          <!-- Include all compiled plugins (below), or include individual files as needed -->
-          <script src="js/bootstrap.min.js"></script>
-      </body>
-  </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

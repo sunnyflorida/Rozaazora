@@ -106,27 +106,19 @@ line-height: 1;
 	height: auto !important;
 }
 /* PRODUCT ---------------------------------------------------------------------------------------*/
-.product_photo {
-	max-width: 100%;
-	max-height: 700px;
-	background-color: #eee;
-}
-.big_product_image {
+.product .product_photo .big_product_image {
 	width: 100%;
-	height: 600px;
+	height: 70%;
 	overflow: hidden;
 }
-
-.big_product_image  > img {
-	width: 100%;
+.product .product_photo .big_product_image img {
 	height: 100%;
-	display: block;
-	margin: 0 auto;
+	max-width: 100%;
 }
-.product_photo .row {
+.product .product_photo .row {
 	padding: 15px 15px 15px 0;
 }
-.product_photo .row img {
+.product .product_photo .row img {
 	float: right;
 }
 .info {
@@ -163,7 +155,7 @@ line-height: 1;
 }
 .product_option_image img {
 	width: 100%;
-	height: auto;
+	max-height: 100%;
 }
 
 
@@ -237,21 +229,27 @@ textarea[name="greeting"] {
 	border: 5px solid #666;
 	padding: 15px;
 }
-.card .product_photo {
-	max-width: 100%;
-	max-height: 400px;
-	overflow: hidden;
-}
 .card .product_photo .big_product_image {
-	max-width: 100%;
-	height: 500px;
+	width: 100%;
+	height: 70%;
 	overflow: hidden;
 }
 .card .product_photo .big_product_image img {
 	max-height: 100%;
-	max-width: 70%;
+	max-width: 100%;
 }
 
+/* ONE gift------------------------------------------------ */
+
+.gift .product_photo .big_product_image {
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+}
+.gift .product_photo .big_product_image img {
+	max-height: 100%;
+	width: 100%;
+}
 
 /*CART--------------------------------------------------------*/
 .well_prod figure {
@@ -340,4 +338,21 @@ input[name="phone_client"] {
 	left: 0; /* сверху и слева 0, обязательные свойства! */
 	cursor: pointer;
 	display: none; /* в обычном состоянии её нет) */
+}
+
+
+/* All gifts------------------------------------*/
+.all_gifts figure {
+	height: 350px;
+}
+.all_gifts figure .figure_img {
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+}
+.all_gifts figure .figure_img img {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: 0 auto;
 }

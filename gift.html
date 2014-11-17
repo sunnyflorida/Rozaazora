@@ -20,90 +20,99 @@
 </head>
 <body>
 <div class="wrapper">
-<div class="container">
-  <div class="row">
-        <div class="col-lg-3 logo">
-          <a href="#">LOGO</a>
-        </div>
-     <div class="col-lg-offset-8 right-head  text-right">
-          <a href="#">Авторизация</a>   <a href="#">Регистрация</a>
-       <form class="navbar-form navbar-left pull-right" role="search">
-          <div class="form-group">
-             <input type="text" class="form-control" placeholder="Search">
+  <header class="row">
+    <div class="container">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <a href="index.html">LOGO</a>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <div class="row">
+          <div class="col-lg-3 col-lg-offset-6 col-md-3 col-md-offset-6">
+            <a href="#">Авторизация</a>   
+            <a href="#">Регистрация</a>
           </div>
-             <button type="submit" class="btn btn-default">Submit</button>
-       </form>
-             <div class="telephone pull-right">+375 44 596-33-03</div>
-     </div>
-  </div>
-</div>
+          <div class="col-lg-3 col-md-3">
+            <a class="alert alert-success pull-right" role="alert" href="cart.html">
+              <h4>Корзина:</h4>
+              <p>0 р.</p><p>0 товаров</p>
+            </a>
+          </div>
+        </div> <!-- row -->
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-8">
+            <a href="tel:+375445963303">+375 44 596-33-03</a>
+            <select class="selectpicker pull-right">
+              <option>BYR</option>
+              <option>USD</option>
+              <option>EUR</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end container -->
+  </header>
 
 <div class="row">
   <nav class="navbar navbar-default" role="navigation">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="col-lg-8">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>         
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="container">
+      <div class="col-lg-9">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>         
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a class="glyphicon glyphicon-home" href="index.html"></a></li>
-            <li><a href="#">Каталог</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Подарки <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="cards.html">открытки</a></li>
-                <li><a href="#">шоколад</a></li>
-                <li><a href="#">Игрушки</a></li>
-                <li><a href="#">Мыло</a></li>
+                <li><a href="chocolate.html">шоколад</a></li>
+                <li><a href="toys.html">Игрушки</a></li>
+                <li><a href="soap.html">Мыло</a></li>
+                <li><a href="baloons.html">Шарики</a></li>
+                <li><a href="champain.html">Шампанское</a></li>
+                <li><a href="souvenirs.html">Сувениры</a></li>
+                <li><a href="vase.html">Вазы</a></li>
+                <li><a href="buckets.html">Корзинки</a></li>
               </ul>
             </li>
             <li><a href="about.html">О нас</a></li>
-            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="delivery.html">Оплата и доставка</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
-          </div>
-       </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <form class="form-inline pull-right">
+          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Search">
+          <button class="input-group-addon">S</button>
+        </form>
+      </div>
+    </div><!-- /.container -->
+  </nav>
+</div><!-- /.row -->
 
-      <div class="col-lg-2">      
-        <select class="selectpicker pull-right">
-          <option>BYR</option>
-          <option>USD</option>
-          <option>EUR</option>
-        </select>
-       </div>
 
-       <div class="col-lg-2">
-           <a class="alert alert-success pull-right" role="alert" href="cart.html">
-            <h4>Корзина:</h4>
-            <p>0 р. | 0 товаров</p>
-           </a>
-       </div>
 
-        
-    </div><!-- /.navbar-collapse -->
-</nav>
-</div><!-- /.container-fluid -->
-
-<div class="container card">
+<div class="container gift">
   <ol class="breadcrumb">
-    <li><a href="#">Главная</a></li>
-    <li><a href="#">Подарки</a></li>
-    <li><a href="#">Открытки</a></li>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="all_gifts.html">Подарки</a></li>
+    <li><a href="cards.html">Открытки</a></li>
     <li class="active">Открытка 1</li>
   </ol>
 <div class="row">
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 product_photo">
       <div class="big_product_image">
-        <img src="img/choc.jpg" alt="img">
+        <img src="img/gift.jpg" alt="img">
       </div>
   </div>
   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    <h2>Шоколад Вкусный</h2>
+    <h2>Подарок Необыкновенный</h2>
     <p>50 000</p>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     <hr>
