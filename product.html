@@ -20,37 +20,50 @@
 </head>
 <body>
 <div class="wrapper">
-       <div class="container">
-        
+  <header class="row">
+    <div class="container">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <a href="index.html">LOGO</a>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
         <div class="row">
-              <div class="col-lg-3 logo">
-                <a href="index.html">LOGO</a>
-              </div>
-           <div class="col-lg-offset-8 right-head  text-right">
-                <a href="#">Авторизация</a>   <a href="#">Регистрация</a>
-             <form class="navbar-form navbar-left pull-right" role="search">
-                <div class="form-group">
-                   <input type="text" class="form-control" placeholder="Search">
-                </div>
-                   <button type="submit" class="btn btn-default">Submit</button>
-             </form>
-                   <a href="tel:+375445963303" class="pull-right">+375 44 596-33-03</a>
-           </div>
+          <div class="col-lg-3 col-lg-offset-6 col-md-3 col-md-offset-6">
+            <a href="#">Авторизация</a>   
+            <a href="#">Регистрация</a>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <a class="alert alert-success pull-right" role="alert" href="cart.html">
+              <h4>Корзина:</h4>
+              <p>0 р.</p><p>0 товаров</p>
+            </a>
+          </div>
+        </div> <!-- row -->
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-8">
+            <a href="tel:+375445963303">+375 44 596-33-03</a>
+            <select class="selectpicker pull-right">
+              <option>BYR</option>
+              <option>USD</option>
+              <option>EUR</option>
+            </select>
+          </div>
         </div>
-       </div>
+      </div>
+    </div> <!-- end container -->
+  </header>
 
 <div class="row">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
-        <div class="col-lg-8">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>         
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-           <ul class="nav navbar-nav">
+      <div class="col-lg-9">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>         
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
             <li class="active"><a class="glyphicon glyphicon-home" href="index.html"></a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li class="dropdown">
@@ -67,49 +80,46 @@
                 <li><a href="buckets.html">Корзинки</a></li>
               </ul>
             </li>
-            <li><a href="about.html">О нас</a></li>
-            <li><a href="delivery">Оплата и доставка</a></li>
+            <li  class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">О нас <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="guarantee.html">Гарантии качаства</a></li>
+              </ul>
+            </li>
+            <li><a href="delivery.html">Оплата и доставка</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
-          </div>
-       </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <form class="form-inline pull-right">
+          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Search">
+          <button class="input-group-addon">S</button>
+        </form>
+      </div>
+    </div><!-- /.container -->
+  </nav>
+</div><!-- /.row -->
 
-      <div class="col-lg-2">      
-      <select class="selectpicker pull-right">
-        <option>BYR</option>
-        <option>USD</option>
-        <option>EUR</option>
-      </select>
-       </div>
-
-       <div class="col-lg-2">
-           <a class="alert alert-success pull-right" role="alert" href="cart.html">
-            <h4>Корзина:</h4>
-            <p>0 р. | 0 товаров</p>
-           </a>
-       </div>
-
-        
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
+<ol class="breadcrumb container">
+  <li><a href="index.html">Главная</a></li>
+  <li><a href="all_gifts.html">Каталог</a></li>
+  <li class="active">Букет осенний</li>
+</ol>
 
 <!-- PRODUCT -->
-<div class="container">
- 
+<div class="container product">
   <div class="row">
-
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 product_photo">
       <div class="big_product_image">
-        <img src="img/flower1.jpg">
+        <img src="img/bucket.jpg">
       </div>
       <div class="row">
-        <img src="img/facebook.png" alt="img">
-        <img src="img/vk.png" alt="img">
-        <img src="img/instagram.png" alt="img">
+        <a href="#"><img src="img/facebook.png" alt="img"></a>
+        <a href="#"><img src="img/vk.png" alt="img"></a>
+        <a href="#"><img src="img/instagram.png" alt="img"></a>
         <button type="button" class="info btn">i</button>
-
       </div>
       <div class="pop-up">
         <h2>Букет осенний</h2>
@@ -118,177 +128,200 @@
       </div>
     </div><!-- End left column -->
 
-
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 product_description">
       <h2>Букет Весеннее настроение</h2>
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 product_opion">
           <div class="product_option_image">
-            <img src="img/cake1.jpg" alt="img">
+            <img src="img/toy.jpg" alt="img">
           </div>
           <p><input type="radio" name="option" value="standart"> Стандарт </p>
           <p>150 000</p>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 product_opion">
           <div class="product_option_image">
-            <img src="img/cake2.jpg" alt="img">
+            <img src="img/champain.jpg" alt="img">
           </div>
           <p><input type="radio" name="option" value="delux"> Делюкс</p>
           <p>150 000</p>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 product_opion">
           <div class="product_option_image">
-            <img src="img/cake3.jpg" alt="img">
+            <img src="img/baloons.jpg" alt="img">
           </div>
           <p><input type="radio" name="option" value="premium"> Премиум </p>
           <p>150 000</p>
         </div>
       </div>
-      <hr>
-      <p>Доставка бесплатно</p>
-      <button type="button" class="btn btn-large btn-primary" data-toggle="modal" data-target="#myModal">В корзину</button>
-      <button type="button" class="btn btn-large btn-primary">Заказ в один клик</button>
-
-
+        <hr>
+        <p>Доставка бесплатно</p>
+        <a href="#mapmodals_cart" class="openmodal_cart" data-toggle="modal" data-id="product" role="button"><button type="button" class="btn btn-large btn-primary">В корзину</button></a>
+        <a href="cart.html"><button type="button" class="btn btn-large btn-primary">Заказ в один клик</button></a>
     </div> <!-- End right column -->
   </div> <!-- End row -->
 
 <!-- Modal Window CART-->
-<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <p class="modal-title" id="myModalLabel">Ваш товар добавлен в корзину</p>
-      </div>
-      <div class="modal-body">
-         <!-- CAROUSEL MODAL-->
-        <div class="jcarousel_m-wrapper">
-                <div class="jcarousel_m">
-                    <ul>
-                        <li>
-                          <img src="img/flower1.jpg" alt="img">
-                          <p>Открытка 1</p>
-                          <p>10 500</p>
-                        </li>
-                        <li>
-                          <img src="img/flower1.jpg" alt="img">
-                          <p>Открытка 1</p>
-                          <p>10 500</p>
-                        </li>
-                        <li>
-                          <img src="img/flower1.jpg" alt="img">
-                          <p>Открытка 1</p>
-                          <p>10 500</p>
-                        </li>
-                        <li>
-                          <img src="img/flower1.jpg" alt="img">
-                          <p>Открытка 1</p>
-                          <p>10 500</p>
-                        </li>
-                        <li>
-                          <img src="img/flower1.jpg" alt="img">
-                          <p>Открытка 1</p>
-                          <p>10 500</p>
-                        </li>
-                       <li>
-                          <img src="img/flower1.jpg" alt="img">
-                          <p>Открытка 1</p>
-                          <p>10 500</p>
-                        </li>
-                          <li>
-                          <img src="img/flower1.jpg" alt="img">
-                          <p>Открытка 1</p>
-                          <p>10 500</p>
-                        </li>
-                          <li>
-                          <img src="img/flower1.jpg" alt="img">
-                          <p>Открытка 1</p>
-                          <p>10 500</p>
-                        </li>
-                          <li>
-                          <img src="img/flower1.jpg" alt="img">
-                          <p>Открытка 1</p>
-                          <p>10 500</p>
-                        </li>
-                    </ul>
-                </div>
 
-                <a href="#" class="jcarousel_m-control-prev">&lsaquo;</a>
-                <a href="#" class="jcarousel_m-control-next">&rsaquo;</a>
-
-               
+  <div class="modal fade" id="mapmodals_cart">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="title_id">Ваш товар добавлен в корзину</h4>
+        </div>
+        <div class="modal-body">
+          <div class="jcarousel_m-wrapper">
+            <div class="jcarousel_m">
+              <ul>
+                <li>
+                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><p>Открытка 1</p>
+                  <p>10 500</p></a>
+                </li>
+                <li>
+                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><p>Открытка 1</p>
+                  <p>10 500</p></a>
+                </li>
+                <li>
+                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><p>Открытка 1</p>
+                  <p>10 500</p></a>
+                </li>
+                <li>
+                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><p>Открытка 1</p>
+                  <p>10 500</p></a>
+                </li>
+                <li>
+                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><p>Открытка 1</p>
+                  <p>10 500</p></a>
+                </li>
+               <li>
+                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><p>Открытка 1</p>
+                  <p>10 500</p></a>
+                </li>
+                <li>
+                 <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><p>Открытка 1</p>
+                  <p>10 500</p></a>
+                </li>
+                <li>
+                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><p>Открытка 1</p>
+                  <p>10 500</p></a>
+                </li>
+                <li>
+                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><p>Открытка 1</p>
+                  <p>10 500</p></a>
+                </li>
+              </ul>
             </div>
+          <a href="#" class="jcarousel_m-control-prev">&lsaquo;</a>
+          <a href="#" class="jcarousel_m-control-next">&rsaquo;</a> 
+        </div> <!-- end jcarousel_m-wrapper -->
 
-
-    <!-- END CAROUSEL -->
         <h5>Текст открытки</h5>
         <textarea placeholder="Введите текст открытки"></textarea>
 
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Перейти на сайт</button>
-        <button type="button" class="btn btn-primary">Перейти в корзину</button>
-
-      </div>
-    </div>
-  </div>
-</div>
-<!--END Modal Window CART-->
+        </div>
+        <div class="modal-footer">
+          <a hrer="#"><button type="button" class="btn btn-default" data-dismiss="modal">Перейти на сайт</button></a>
+          <a href="cart.html"><button type="button" class="btn btn-primary">Перейти в корзину</button></a>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
 
 
-
-  <div class="row">
-    <hr>
-    <p>Сопутствующие товары</p>
-
+<div class="row">
+  <hr>
+  <p>Сопутствующие товары</p>
     <!-- CAROUSEL -->
     <div class="jcarousel-wrapper">
             <div class="jcarousel1">
                 <ul>
                     <li>
-                      <a href="product.html">
-                      <img src="img/flower1.jpg" alt="img">
-                      <p>Утренняя свежесть</p>
-                      <p>20 000</p>
-                      </a>
+                      <figure>
+                        <a href="product.html">
+                        <div class="figure_img">
+                          <img src="img/toy.jpg" alt="img">
+                        </div>
+                          <figcaption class="text-center">
+                            <p>Букет 1>></p>
+                            <p>160 000</p>
+                          </figcaption>
+                        </a>
+                      </figure>
                     </li>
                     <li>
-                      <a href="product.html">
-                      <img src="img/flower1.jpg" alt="img">
-                      <p>Утренняя свежесть</p>
-                      <p>20 000</p>
-                      </a>
+                       <figure>
+                        <a href="product.html">
+                        <div class="figure_img">
+                          <img src="img/baloons.jpg" alt="img">
+                        </div>
+                          <figcaption class="text-center">
+                            <p>Букет 1>></p>
+                            <p>160 000</p>
+                          </figcaption>
+                        </a>
+                      </figure>
                     </li>
                     <li>
-                      <a href="product.html">
-                      <img src="img/flower1.jpg" alt="img">
-                      <p>Утренняя свежесть</p>
-                      <p>20 000</p>
-                      </a>
+                       <figure>
+                        <a href="product.html">
+                        <div class="figure_img">
+                          <img src="img/bucket.jpg" alt="img">
+                        </div>
+                          <figcaption class="text-center">
+                            <p>Букет 1>></p>
+                            <p>160 000</p>
+                          </figcaption>
+                        </a>
+                      </figure>
                     </li>
                     <li>
-                     <a href="product.html">
-                      <img src="img/flower1.jpg" alt="img">
-                      <p>Утренняя свежесть</p>
-                      <p>20 000</p>
-                      </a>
+                      <figure>
+                        <a href="product.html">
+                        <div class="figure_img">
+                          <img src="img/soap.jpg" alt="img">
+                        </div>
+                          <figcaption class="text-center">
+                            <p>Букет 1>></p>
+                            <p>160 000</p>
+                          </figcaption>
+                        </a>
+                      </figure>
                     </li>
                     <li>
-                      <a href="product.html">
-                      <img src="img/flower1.jpg" alt="img">
-                      <p>Утренняя свежесть</p>
-                      <p>20 000</p>
-                      </a>
+                       <figure>
+                        <a href="product.html">
+                        <div class="figure_img">
+                          <img src="img/souvenirs.jpg" alt="img">
+                        </div>
+                          <figcaption class="text-center">
+                            <p>Букет 1>></p>
+                            <p>160 000</p>
+                          </figcaption>
+                        </a>
+                      </figure>
                     </li>
                     <li>
-                      <a href="product.html">
-                      <img src="img/flower1.jpg" alt="img">
-                      <p>Утренняя свежесть</p>
-                      <p>20 000</p>
-                      </a>
+                       <figure>
+                        <a href="product.html">
+                        <div class="figure_img">
+                          <img src="img/gift.jpg" alt="img">
+                        </div>
+                          <figcaption class="text-center">
+                            <p>Букет 1>></p>
+                            <p>160 000</p>
+                          </figcaption>
+                        </a>
+                      </figure>
                     </li>
                 </ul>
             </div>
@@ -305,37 +338,59 @@
   </div>
 
 
+<div class="row payments null">
+  <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+    <img src="img/mastercard.jpg" alt="img">
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+    <img src="img/mastercard.jpg" alt="img">
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+    <img src="img/mastercard.jpg" alt="img">
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+    <img src="img/mastercard.jpg" alt="img">
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+    <img src="img/mastercard.jpg" alt="img">
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+    <img src="img/mastercard.jpg" alt="img">
+  </div>
+</div>
+
+
+</div>
+
+
 </div> <!-- End container -->
-
-
 <!-- END PRODUCT -->
-
 </div> <!-- END WRAPPER -->
-
+<div class="null"></div>
 <hr>
 <footer class="row">
 <div class="container">
- <div class="col-md-3">
+   <div class="col-md-3">
       <ul class="list-unstyled">
         <li><h4>Меню:</h4></li>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Букеты</a></li>
-        <li><a href="#">Подарки</a></li>
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Оплата и доставка</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Букеты</a></li>
+        <li><a href="all_gifts.html">Подарки</a></li>
+        <li><a href="about.html">О компании</a></li>
+        <li><a href="delivery.html">Оплата и доставка</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
       </ul>
-    </div>
+  </div>
 
 <div class="col-md-3">
       <ul class="list-unstyled">
         <li><h4>Повод:</h4></li>
-        <li><a href="#">Свадьба</a></li>
-        <li><a href="#">День Рождения</a></li>
-        <li><a href="#">Просто так</a></li>
-        <li><a href="#">"Прости меня"</a></li>
-        <li><a href="#">"Люблю тебя"</a></li>
-        <li><a href="#">Halloween</a></li>
+        <li><a href="catalog.html">Свадьба</a></li>
+        <li><a href="catalog.html">День Рождения</a></li>
+        <li><a href="catalog.html">Просто так</a></li>
+        <li><a href="catalog.html">"Прости меня"</a></li>
+        <li><a href="catalog.html">"Люблю тебя"</a></li>
+        <li><a href="catalog.html">Halloween</a></li>
       </ul>
     </div>
 
@@ -362,15 +417,15 @@
         <li><a href="#">Лилии</a></li>
       </ul>
     </div>
+
+
+      <hr>
+      <div class="row text-right">
+         Создание и продвижение сайтов 
+        <a href="#">IntellectIT</a>
+      </div>
 </div>
 </footer>
-
-<hr>
-
-<div class="row text-right">
-   Создание и продвижение сайтов 
-   <a href="#">IntellectIT</a>
-</div>
 
 
 

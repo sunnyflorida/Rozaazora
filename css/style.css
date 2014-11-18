@@ -16,7 +16,7 @@
 }
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -53,6 +53,8 @@ html, body {
 .null {
   clear: both;
   margin-top: 50px;
+  display: block;
+  height: 20px;
 }
 
 /* HEADER--------------------------------------------------*/
@@ -78,7 +80,7 @@ border-bottom: 1px solid transparent;
 box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
 }
 
-
+/* NAVIGATION-----------------------------------------*/
 .navbar {
 position: relative;
 height: 50px;
@@ -87,7 +89,24 @@ margin-top: 10px;
 border: 1px solid transparent;
 margin-bottom: 0px;
 }
-
+.dropdown_gifts_menu {
+	z-index: 888;
+	position: absolute;
+	display: none;
+	background-color: rgb(255,255,255);
+}
+.dropdown_catalog_menu {
+	z-index: 888;
+	position: absolute;
+	display: none;
+	background-color: rgb(255,255,255);	
+}
+.dropdown_about_menu {
+	z-index: 888;
+	position: absolute;
+	display: none;
+	background-color: rgb(255,255,255);	
+}
 .glyphicon {
 height: 50;
 position: relative;
@@ -105,28 +124,26 @@ line-height: 1;
 	min-height: 100%;
 	height: auto !important;
 }
+
 /* PRODUCT ---------------------------------------------------------------------------------------*/
-.product_photo {
-	max-width: 100%;
-	max-height: 700px;
-	background-color: #eee;
-}
-.big_product_image {
-	width: 100%;
+.container.product {
 	height: 600px;
+}
+.product .product_photo .big_product_image {
+	width: 100%;
+	height: 70%;
 	overflow: hidden;
 }
-
-.big_product_image  > img {
-	width: 100%;
+.product .product_photo .big_product_image img {
 	height: 100%;
+	max-width: 100%;
 	display: block;
 	margin: 0 auto;
 }
-.product_photo .row {
+.product .product_photo .row {
 	padding: 15px 15px 15px 0;
 }
-.product_photo .row img {
+.product .product_photo .row img {
 	float: right;
 }
 .info {
@@ -163,9 +180,21 @@ line-height: 1;
 }
 .product_option_image img {
 	width: 100%;
-	height: auto;
+	max-height: 100%;
 }
-
+.jcarousel1 figure {
+	height: 250px;
+	width: 150px;
+}
+.jcarousel1 figure .figure_img {
+	width: 100%;
+	height: 80%;
+	overflow: hidden;
+}
+.jcarousel1 figure .figure_img img {
+	height: 100%;
+	width: auto;
+}
 
 /*CONTACTS----------------------------------------------------------------------- */
 .image {
@@ -237,21 +266,36 @@ textarea[name="greeting"] {
 	border: 5px solid #666;
 	padding: 15px;
 }
-.card .product_photo {
-	max-width: 100%;
-	max-height: 400px;
-	overflow: hidden;
+.container.card {
+	height: 600px;
 }
 .card .product_photo .big_product_image {
-	max-width: 100%;
-	height: 500px;
+	width: 100%;
+	height: 70%;
 	overflow: hidden;
 }
 .card .product_photo .big_product_image img {
-	max-height: 100%;
-	max-width: 70%;
+	height: 100%;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
 }
 
+/* ONE gift------------------------------------------------ */
+.container.gift {
+	height: 600px;
+}
+.gift .product_photo .big_product_image {
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+}
+.gift .product_photo .big_product_image img {
+	height: 100%;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
 
 /*CART--------------------------------------------------------*/
 .well_prod figure {
@@ -272,6 +316,17 @@ textarea[name="greeting"] {
 .well_prod > div:first-child img {
 	width: 100%;
 }
+.well_prod .cart_image_container,
+.well_card .cart_image_container {
+	width: 150px;
+	height: 150px;
+}
+.well_prod .cart_image_container img,
+.well_card .cart_image_container img {
+	width: 100%;
+	height: 100%;
+}
+
 /*PAYMENTS-------------------------------------------------------*/
 .payments > div {
 	overflow: hidden;
@@ -291,53 +346,40 @@ input[name="phone_client"] {
 	margin-bottom: 20px;
 }
 
-/* MODAL WINDOW --------------------------------------*/
-.modal_div {
-	width: 700px; 
-	height: 500px; /* Размеры должны быть фиксированы */
-	border-radius: 5px;
-	border: 1px solid #000 ;
-	background: #fff;
-	position: fixed; /* чтобы окно было в видимой зоне в любом месте */
-	top: 45%; /* отступаем сверху 45%, остальные 5% подвинет скрипт */
-	left: 50%; /* половина экрана слева */
-	margin-top: -250px;
-	margin-left: -350px; /* тут вся магия центровки css, отступаем влево и вверх минус половину ширины и высоты соответственно =) */
-	display: none; /* в обычном состоянии окна не должно быть */
-	opacity: 0; /* полностью прозрачно для анимирования */
-	z-index: 5; /* окно должно быть наиболее большем слое */
-	padding: 10px;
+
+/* All gifts------------------------------------*/
+.all_gifts figure {
+	height: 350px;
 }
-/* Кнопка закрыть для тех кто в танке) */
-.modal_div #modal_close {
-	width: 70px;
-	height: 21px;
-	position: absolute;
-	top: 10px;
-	right: 30px;
-	cursor: pointer;
+.all_gifts figure .figure_img {
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+}
+.all_gifts figure .figure_img img {
+	max-width: 100%;
+	max-height: 100%;
 	display: block;
+	margin: 0 auto;
 }
-.modal_div #modal_close b {
-	display: inline-block;
-	background-color: rgb(240,240,240);
-	border-radius: 50%;
-	width: 15px;
-	height: 15px;
-	text-align: center;
-	vertical-align: middle;
-	margin-top: -3px;
+
+/* MAP--------------------------------------------------*/
+#map-container { 
+	height: 300px 
 }
-/* Подложка */
-#overlay {
-	z-index: 3; /* подложка должна быть выше слоев элементов сайта, но ниже слоя модального окна */
-	position: fixed; /* всегда перекрывает весь сайт */
-	background-color: #000; /* черная */
-	opacity: 0.8; /* но немного прозрачна */
-	width: 100%; 
-	height: 100%; /* размером во весь экран */
-	top: 0; 
-	left: 0; /* сверху и слева 0, обязательные свойства! */
-	cursor: pointer;
-	display: none; /* в обычном состоянии её нет) */
+
+/* CATALOG----------------------------------------------------------*/
+.products_all figure {
+	height: 350px;
+}
+.products_all figure .figure_img {
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+}
+.products_all figure .figure_img img {
+	width: auto;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
 }

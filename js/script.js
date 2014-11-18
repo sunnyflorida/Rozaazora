@@ -1,17 +1,79 @@
- $(document).ready(function(){
+ // info pop-up
+ $(document).ready(function(){  
     $(".pop-up").hide();
     $(".info").on('click', function(){
-    	 $(".pop-up").toggle(500);
- 	});
+    	 $(".pop-up").toggle();
+ 	  });
 	
+  // catalog menu
+    $(".list-group").hide();
+    $(".btn_catalog").on('click', function(){
+      $(this).parent().parent().children('div').toggle('500'); 
+  });
 
-	$('input:radio').change(
-	    function(){
-	        var src = $(this).parent().parent().find('.product_option_image img').attr('src');
+// little pictures on product page
+	$('input:radio').change(function(){
+	    var src = $(this).parent().parent().find('.product_option_image img').attr('src');
 			$(".big_product_image").children('img').attr('src',src);   
 	    }
-	);          
+	);    
+  $('.product_option_image').on('click',function(){
+      var src = $(this).children('img').attr('src');
+      $(".big_product_image").children('img').attr('src',src);   
+      }
+  ); 
 
+  $('.product_option_image').on('click',function(){
+      $('input:radio').prop('checked',false);  
+      $(this).parent().children('p').children('input:radio').prop('checked',true);  
+      }
+  );
+
+
+  $('.btn_cart_remove').on('click',function(){
+      $(this).closest('.row').remove(); 
+      }
+  );     
+
+    $('.dropdown_gifts').on('mouseover',function(){
+      $('.dropdown_gifts_menu').show()
+    });
+    $('.dropdown_gifts').on('mouseout',function(){
+      $('.dropdown_gifts_menu').hide()
+    });
+     $('.dropdown_gifts_menu').on('mouseover',function(){
+      $('.dropdown_gifts_menu').show()
+    });
+    $('.dropdown_gifts_menu').on('mouseout',function(){
+      $('.dropdown_gifts_menu').hide()
+    });
+
+    $('.dropdown_catalog').on('mouseover',function(){
+      $('.dropdown_catalog_menu').show()
+    });
+    $('.dropdown_catalog').on('mouseout',function(){
+      $('.dropdown_catalog_menu').hide()
+    });
+     $('.dropdown_catalog_menu').on('mouseover',function(){
+      $('.dropdown_catalog_menu').show()
+    });
+    $('.dropdown_catalog_menu').on('mouseout',function(){
+      $('.dropdown_catalog_menu').hide()
+    });
+
+     $('.dropdown_about').on('mouseover',function(){
+      $('.dropdown_about_menu').show()
+    });
+    $('.dropdown_about').on('mouseout',function(){
+      $('.dropdown_about_menu').hide()
+    });
+     $('.dropdown_about_menu').on('mouseover',function(){
+      $('.dropdown_about_menu').show()
+    });
+    $('.dropdown_about_menu').on('mouseout',function(){
+      $('.dropdown_about_menu').hide()
+    });
+     
  });
 
 
@@ -28,6 +90,21 @@ $(document).ready(function(){
 		var greeting = $('.greeting textarea').val();
 		$('.greeting_styled').children('p').text(greeting).css({'font-family':'denistina', 'font-size':'25px'});
 	});
+
+  $('.greeting textarea').on('keyup',function(){
+    var greeting = $('.greeting textarea').val();
+    var text = $('.greeting_styled').children('p').text(greeting);
+      $('#font1').on('click',function(){
+        $(text).css({'font-family':'Wonderland', 'font-size':'25px'});
+      });
+      $('#font2').on('click',function(){
+        $(text).css({'font-family':'Zombie', 'font-size':'25px'});
+      });
+      $('#font3').on('click',function(){
+        $(text).css({'font-family':'denistina', 'font-size':'25px'});
+      });
+
+  });
 
 })
 
@@ -81,4 +158,10 @@ $(document).on("click", ".openmodal", function () {
     $(".modal-header #title_id").html( var_mapTitle );
     $('#mapmodals').modal('show');
 });
+
+$(document).on("click", ".openmodal_cart", function () {
+    var var_mapTitle = $(this).data('id');
+    $('#mapmodals_cart').modal('show');
+});
+
 

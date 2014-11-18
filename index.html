@@ -19,26 +19,42 @@
 </head>
 <body>
 <div class="wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 logo"><a href="index.html">LOGO</a></div>
-      <div class="col-lg-offset-8 right-head text-right">
-        <a href="#">Авторизация</a>   <a href="#">Регистрация</a>
-          <form class="navbar-form navbar-left pull-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <a href="tel:+375445963303" class="pull-right">+375 44 596-33-03</a>
-           </div>
+  <header class="row">
+    <div class="container">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <a href="index.html">LOGO</a>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <div class="row">
+          <div class="col-lg-3 col-lg-offset-6 col-md-3 col-md-offset-6">
+            <a href="#">Авторизация</a>   
+            <a href="#">Регистрация</a>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <a class="alert alert-success pull-right" role="alert" href="cart.html">
+              <h4>Корзина:</h4>
+              <p>0 р.</p><p>0 товаров</p>
+            </a>
+          </div>
+        </div> <!-- row -->
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-8">
+            <a href="tel:+375445963303">+375 44 596-33-03</a>
+            <select class="selectpicker pull-right">
+              <option>BYR</option>
+              <option>USD</option>
+              <option>EUR</option>
+            </select>
+          </div>
         </div>
-       </div>
+      </div>
+    </div> <!-- end container -->
+  </header>
 
 <div class="row">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
-      <div class="col-lg-8">
+      <div class="col-lg-9">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -46,12 +62,23 @@
           <span class="icon-bar"></span>
         </button>         
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+         <ul class="nav navbar-nav">
             <li class="active"><a class="glyphicon glyphicon-home" href="index.html"></a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Подарки <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
+            <li><a href="#" class="dropdown_catalog">Каталог<span class="caret"></span></a>
+              <ul class="dropdown_catalog_menu">
+                <li><a href="catalog.html">Розы</a></li>
+                <li><a href="catalog.html">Хризантемы</a></li>
+                <li><a href="catalog.html">Орхидеи</a></li>
+                <li><a href="catalog.html">На день рождения</a></li>
+                <li><a href="catalog.html">"Люблю тебя"</a></li>
+                <li><a href="catalog.html">"Просто так"</a></li>
+                <li><a href="catalog.html">Свадьба</a></li>
+                <li><a href="catalog.html">Любимой</a></li>
+                <li><a href="catalog.html">Маме</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="dropdown_gifts">Подарки <span class="caret"></span></a>
+              <ul class="dropdown_gifts_menu">
                 <li><a href="cards.html">открытки</a></li>
                 <li><a href="chocolate.html">шоколад</a></li>
                 <li><a href="toys.html">Игрушки</a></li>
@@ -63,30 +90,25 @@
                 <li><a href="buckets.html">Корзинки</a></li>
               </ul>
             </li>
-            <li><a href="about.html">О нас</a></li>
-            <li><a href="delivery">Оплата и доставка</a></li>
+            <li><a href="#" class="dropdown_about">О нас <span class="caret"></span></a>
+              <ul class="dropdown_about_menu">
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="guarantee.html">Гарантии качаства</a></li>
+                <li><a href="for_clients.html">Постоянным клиентам</a></li>
+              </ul>
+            </li>
+            <li><a href="delivery.html">Оплата и доставка</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </div>
       </div>
-
-      <div class="col-lg-2">      
-        <select class="selectpicker pull-right">
-          <option>BYR</option>
-          <option>USD</option>
-          <option>EUR</option>
-        </select>
+      <div class="col-lg-3 col-md-3">
+        <form class="form-inline pull-right">
+          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Search">
+          <button class="input-group-addon">S</button>
+        </form>
       </div>
-
-      <div class="col-lg-2">
-        <a class="alert alert-success pull-right" role="alert" href="cart.html">
-          <h4>Корзина:</h4>
-          <p>0 р. | 0 товаров</p>
-        </a>
-      </div>
-
-        
-    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
   </nav>
 </div><!-- /.row -->
 
@@ -175,12 +197,16 @@
         <img src="img\banner.jpg" alt="баннер"> 
       </div>
     </div>
-    <div class="col-md-4 text-center">
-      <a href="#"><img src="img\flower1.jpg" alt="букет 4"></a>
-        <div class="caption">
-          <a href="#"><h4>Букет 4 >></h4></a>
-          <p>300 000 б.р.</p>
-        </div>
+     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+        <a href="product.html">
+          <figure>
+            <img src="img\flower1.jpg" alt="букет 1">
+            <figcaption>
+              <h4>Букет 1 >></h4></a>
+              <p>300 000 б.р.</p>
+            </figcaption>
+          </figure>
+        </a>
     </div>
   </div>
 
@@ -316,8 +342,15 @@
           <li><h4>Меню:</h4></li>
           <li><a href="index.html">Главная</a></li>
           <li><a href="catalog.html">Букеты</a></li>
-          <li><a href="gifts.html">Подарки</a></li>
-          <li><a href="about.html">О нас</a></li>
+          <li><a href="all_gifts.html">Подарки</a></li>
+          <li  class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">О нас <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="guarantee.html">Гарантии качаства</a></li>
+                <li><a href="for_clients.html">Постоянным клиентам</a></li>
+              </ul>
+            </li>
           <li><a href="delivery.html">Оплата и доставка</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
@@ -325,12 +358,12 @@
       <div class="col-md-3">
         <ul class="list-unstyled">
           <li><h4>Повод:</h4></li>
-          <li><a href="">Свадьба</a></li>
-          <li><a href="#">День Рождения</a></li>
-          <li><a href="#">Просто так</a></li>
-          <li><a href="#">"Прости меня"</a></li>
-          <li><a href="#">"Люблю тебя"</a></li>
-          <li><a href="#">Halloween</a></li>
+          <li><a href="catalog.html">Свадьба</a></li>
+          <li><a href="catalog.html">День Рождения</a></li>
+          <li><a href="catalog.html">Просто так</a></li>
+          <li><a href="catalog.html">"Прости меня"</a></li>
+          <li><a href="catalog.html">"Люблю тебя"</a></li>
+          <li><a href="catalog.html">Halloween</a></li>
         </ul>
       </div>
       <div class="col-md-3">
@@ -355,19 +388,23 @@
           <li><a href="#">Лилии</a></li>
         </ul>
       </div>
-    </div>
 
+      <hr>
+      <div class="row text-right">
+         Создание и продвижение сайтов 
+        <a href="#">IntellectIT</a>
+      </div>
+</div>
+</div>
 </footer>
 
-<hr>
-
-<div class="row text-right container">
-   Создание и продвижение сайтов 
-   <a href="#">IntellectIT</a>
-</div>
-
-
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
