@@ -8,12 +8,12 @@
   // catalog menu
     $(".list-group").hide();
     $(".btn_catalog").on('click', function(){
-      $(this).parent().parent().children('div').toggle('500'); 
+      $(this).parent().children('div').toggle(); 
   });
 
 // little pictures on product page
 	$('input:radio').change(function(){
-	    var src = $(this).parent().parent().find('.product_option_image img').attr('src');
+	    var src = $(this).parent().parent().parent().find('.product_option_image img').attr('src');
 			$(".big_product_image").children('img').attr('src',src);   
 	    }
 	);    
@@ -22,10 +22,19 @@
       $(".big_product_image").children('img').attr('src',src);   
       }
   ); 
-
+   $('.product_option_choise').on('click',function(){
+      var src = $(this).parent().find('.product_option_image img').attr('src');
+      $(".big_product_image").children('img').attr('src',src);   
+      }
+  );
   $('.product_option_image').on('click',function(){
       $('input:radio').prop('checked',false);  
-      $(this).parent().children('p').children('input:radio').prop('checked',true);  
+      $(this).parent().find('input:radio').prop('checked',true);  
+      }
+  );
+   $('.product_option_choise').on('click',function(){
+      $('input:radio').prop('checked',false);  
+      $(this).children('p').find('input:radio').prop('checked',true);  
       }
   );
 

@@ -1,3 +1,18 @@
+.jcarousel1 figure {
+    height: 300px;
+    width: 200px;
+}
+.jcarousel1 figure .figure_img {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+.jcarousel1 figure .figure_img img {
+    height: 100%;
+    width: auto;
+}
+
+
 .jcarousel-wrapper,
 .jcarousel_m-wrapper {
     margin: 20px auto;
@@ -11,6 +26,11 @@
     box-shadow: 0 0 2px #999;
     clear: both;
 }
+.jcarousel-wrapper {
+    height: 300px !important;
+    float: none;
+    clear: both;
+}
 
 /** Carousel **/
 
@@ -20,7 +40,9 @@
     overflow: hidden;
     width: 100%;
 }
-
+.jcarousel1 {
+    height: 300px !important;
+}
 .jcarousel1 ul,
 .jcarousel_m ul {
     width: 20000em;
@@ -29,7 +51,9 @@
     margin: 0;
     padding: 0;
 }
-
+.jcarousel1 li {
+    height: 300px !important;
+}
 .jcarousel1 li,
 .jcarousel_m li {
     width: 200px;
@@ -94,26 +118,4 @@
     right: 15px;
 }
 
-/** Carousel Pagination **/
 
-.jcarousel1-pagination,
-.jcarousel_m-pagination {
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    margin: 0;
-}
-
-.jcarousel1-pagination a.active,
-.jcarousel_m-pagination a.active {
-    background: #4E443C;
-    color: #fff;
-    opacity: 1;
-
-    -webkit-box-shadow: 0 0 2px #F0EFE7;
-    -moz-box-shadow: 0 0 2px #F0EFE7;
-    box-shadow: 0 0 2px #F0EFE7;
-}

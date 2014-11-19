@@ -53,7 +53,7 @@
   </header>
 
 <div class="row">
-  <nav class="navbar navbar-default" role="navigation">
+ <nav class="navbar navbar-default" role="navigation">
     <div class="container">
       <div class="col-lg-9">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -63,12 +63,23 @@
           <span class="icon-bar"></span>
         </button>         
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+           <ul class="nav navbar-nav">
             <li class="active"><a class="glyphicon glyphicon-home" href="index.html"></a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Подарки <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
+            <li><a href="#" class="dropdown_catalog">Каталог<span class="caret"></span></a>
+              <ul class="dropdown_catalog_menu">
+                <li><a href="catalog.html">Розы</a></li>
+                <li><a href="catalog.html">Хризантемы</a></li>
+                <li><a href="catalog.html">Орхидеи</a></li>
+                <li><a href="catalog.html">На день рождения</a></li>
+                <li><a href="catalog.html">"Люблю тебя"</a></li>
+                <li><a href="catalog.html">"Просто так"</a></li>
+                <li><a href="catalog.html">Свадьба</a></li>
+                <li><a href="catalog.html">Любимой</a></li>
+                <li><a href="catalog.html">Маме</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="dropdown_gifts">Подарки <span class="caret"></span></a>
+              <ul class="dropdown_gifts_menu">
                 <li><a href="cards.html">открытки</a></li>
                 <li><a href="chocolate.html">шоколад</a></li>
                 <li><a href="toys.html">Игрушки</a></li>
@@ -80,11 +91,11 @@
                 <li><a href="buckets.html">Корзинки</a></li>
               </ul>
             </li>
-            <li  class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">О нас <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
+            <li><a href="#" class="dropdown_about">О нас <span class="caret"></span></a>
+              <ul class="dropdown_about_menu">
                 <li><a href="about.html">О компании</a></li>
                 <li><a href="guarantee.html">Гарантии качаства</a></li>
+                <li><a href="for_clients.html">Постоянным клиентам</a></li>
               </ul>
             </li>
             <li><a href="delivery.html">Оплата и доставка</a></li>
@@ -104,7 +115,7 @@
 
 <ol class="breadcrumb container">
   <li><a href="index.html">Главная</a></li>
-  <li><a href="all_gifts.html">Каталог</a></li>
+  <li><a href="catalog.html">Каталог</a></li>
   <li class="active">Букет осенний</li>
 </ol>
 
@@ -123,8 +134,8 @@
       </div>
       <div class="pop-up">
         <h2>Букет осенний</h2>
-        <p>Тут идет его сотав или что-то типа этого</p>
-        <p>И еще что-нибудь</p>
+        <p>Тут идет его соcтав</p>
+        <p>И его более детальное описание</p>
       </div>
     </div><!-- End left column -->
 
@@ -135,22 +146,28 @@
           <div class="product_option_image">
             <img src="img/toy.jpg" alt="img">
           </div>
-          <p><input type="radio" name="option" value="standart"> Стандарт </p>
-          <p>150 000</p>
+          <div class="product_option_choise">
+            <p><input type="radio" name="option" value="standart"> Стандарт </p>
+            <p>150 000</p>
+          </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 product_opion">
           <div class="product_option_image">
             <img src="img/champain.jpg" alt="img">
           </div>
-          <p><input type="radio" name="option" value="delux"> Делюкс</p>
-          <p>150 000</p>
+          <div class="product_option_choise">
+            <p><input type="radio" name="option" value="delux"> Делюкс</p>
+            <p>150 000</p>
+           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 product_opion">
           <div class="product_option_image">
             <img src="img/baloons.jpg" alt="img">
           </div>
-          <p><input type="radio" name="option" value="premium"> Премиум </p>
-          <p>150 000</p>
+          <div class="product_option_choise">
+            <p><input type="radio" name="option" value="premium"> Премиум </p>
+            <p>150 000</p>
+          </div>
         </div>
       </div>
         <hr>
@@ -160,61 +177,163 @@
     </div> <!-- End right column -->
   </div> <!-- End row -->
 
-<!-- Modal Window CART-->
 
+
+  <div class="row">
+    <hr>
+    <p>Сопутствующие товары</p>
+      <!-- CAROUSEL -->
+      <div class="jcarousel-wrapper">
+              <div class="jcarousel1">
+                  <ul>
+                      <li>
+                        <figure>
+                          <a href="gift.html">
+                          <div class="figure_img">
+                            <img src="img/toy.jpg" alt="img">
+                          </div>
+                            <figcaption class="text-center">
+                              <p>Букет 1>></p>
+                              <p>160 000</p>
+                            </figcaption>
+                          </a>
+                        </figure>
+                      </li>
+                      <li>
+                         <figure>
+                          <a href="gift.html">
+                          <div class="figure_img">
+                            <img src="img/baloons.jpg" alt="img">
+                          </div>
+                            <figcaption class="text-center">
+                              <p>Букет 1>></p>
+                              <p>160 000</p>
+                            </figcaption>
+                          </a>
+                        </figure>
+                      </li>
+                      <li>
+                         <figure>
+                          <a href="gift.html">
+                          <div class="figure_img">
+                            <img src="img/bucket.jpg" alt="img">
+                          </div>
+                            <figcaption class="text-center">
+                              <p>Букет 1>></p>
+                              <p>160 000</p>
+                            </figcaption>
+                          </a>
+                        </figure>
+                      </li>
+                      <li>
+                        <figure>
+                          <a href="gift.html">
+                          <div class="figure_img">
+                            <img src="img/soap.jpg" alt="img">
+                          </div>
+                            <figcaption class="text-center">
+                              <p>Букет 1>></p>
+                              <p>160 000</p>
+                            </figcaption>
+                          </a>
+                        </figure>
+                      </li>
+                      <li>
+                         <figure>
+                          <a href="gift.html">
+                          <div class="figure_img">
+                            <img src="img/souvenirs.jpg" alt="img">
+                          </div>
+                            <figcaption class="text-center">
+                              <p>Букет 1>></p>
+                              <p>160 000</p>
+                            </figcaption>
+                          </a>
+                        </figure>
+                      </li>
+                      <li>
+                         <figure>
+                          <a href="gift.html">
+                          <div class="figure_img">
+                            <img src="img/gift.jpg" alt="img">
+                          </div>
+                            <figcaption class="text-center">
+                              <p>Букет 1>></p>
+                              <p>160 000</p>
+                            </figcaption>
+                          </a>
+                        </figure>
+                      </li>
+                  </ul>
+              </div>
+              <a href="#" class="jcarousel1-control-prev">&lsaquo;</a>
+              <a href="#" class="jcarousel1-control-next">&rsaquo;</a>
+          </div>
+      <!-- END CAROUSEL -->
+    </div><!--  end row -->
+
+  <div class="row null"> 
+    <h1>;njmgporgnme</h1>
+    <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+  </div>
+</div> <!-- end container product -->
+</div> <!-- END WRAPPER -->
+
+<!-- Modal Window CART-->
   <div class="modal fade" id="mapmodals_cart">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <h4 class="modal-title" id="title_id">Ваш товар добавлен в корзину</h4>
+          <p>В корзине 1 товар(ов)</p>
         </div>
         <div class="modal-body">
           <div class="jcarousel_m-wrapper">
             <div class="jcarousel_m">
               <ul>
                 <li>
-                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><img src="img/card.jpg" alt="img"></a>
                   <a href="card.html"><p>Открытка 1</p>
                   <p>10 500</p></a>
                 </li>
                 <li>
-                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><img src="img/card.jpg" alt="img"></a>
                   <a href="card.html"><p>Открытка 1</p>
                   <p>10 500</p></a>
                 </li>
                 <li>
-                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><img src="img/card.jpg" alt="img"></a>
                   <a href="card.html"><p>Открытка 1</p>
                   <p>10 500</p></a>
                 </li>
                 <li>
-                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><img src="img/card.jpg" alt="img"></a>
                   <a href="card.html"><p>Открытка 1</p>
                   <p>10 500</p></a>
                 </li>
                 <li>
-                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><img src="img/card.jpg" alt="img"></a>
                   <a href="card.html"><p>Открытка 1</p>
                   <p>10 500</p></a>
                 </li>
                <li>
-                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><img src="img/card.jpg" alt="img"></a>
                   <a href="card.html"><p>Открытка 1</p>
                   <p>10 500</p></a>
                 </li>
                 <li>
-                 <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                 <a href="card.html"><img src="img/card.jpg" alt="img"></a>
                   <a href="card.html"><p>Открытка 1</p>
                   <p>10 500</p></a>
                 </li>
                 <li>
-                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><img src="img/card.jpg" alt="img"></a>
                   <a href="card.html"><p>Открытка 1</p>
                   <p>10 500</p></a>
                 </li>
                 <li>
-                  <a href="card.html"><img src="img/flower1.jpg" alt="img"></a>
+                  <a href="card.html"><img src="img/card.jpg" alt="img"></a>
                   <a href="card.html"><p>Открытка 1</p>
                   <p>10 500</p></a>
                 </li>
@@ -236,137 +355,6 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
-
-
-<div class="row">
-  <hr>
-  <p>Сопутствующие товары</p>
-    <!-- CAROUSEL -->
-    <div class="jcarousel-wrapper">
-            <div class="jcarousel1">
-                <ul>
-                    <li>
-                      <figure>
-                        <a href="product.html">
-                        <div class="figure_img">
-                          <img src="img/toy.jpg" alt="img">
-                        </div>
-                          <figcaption class="text-center">
-                            <p>Букет 1>></p>
-                            <p>160 000</p>
-                          </figcaption>
-                        </a>
-                      </figure>
-                    </li>
-                    <li>
-                       <figure>
-                        <a href="product.html">
-                        <div class="figure_img">
-                          <img src="img/baloons.jpg" alt="img">
-                        </div>
-                          <figcaption class="text-center">
-                            <p>Букет 1>></p>
-                            <p>160 000</p>
-                          </figcaption>
-                        </a>
-                      </figure>
-                    </li>
-                    <li>
-                       <figure>
-                        <a href="product.html">
-                        <div class="figure_img">
-                          <img src="img/bucket.jpg" alt="img">
-                        </div>
-                          <figcaption class="text-center">
-                            <p>Букет 1>></p>
-                            <p>160 000</p>
-                          </figcaption>
-                        </a>
-                      </figure>
-                    </li>
-                    <li>
-                      <figure>
-                        <a href="product.html">
-                        <div class="figure_img">
-                          <img src="img/soap.jpg" alt="img">
-                        </div>
-                          <figcaption class="text-center">
-                            <p>Букет 1>></p>
-                            <p>160 000</p>
-                          </figcaption>
-                        </a>
-                      </figure>
-                    </li>
-                    <li>
-                       <figure>
-                        <a href="product.html">
-                        <div class="figure_img">
-                          <img src="img/souvenirs.jpg" alt="img">
-                        </div>
-                          <figcaption class="text-center">
-                            <p>Букет 1>></p>
-                            <p>160 000</p>
-                          </figcaption>
-                        </a>
-                      </figure>
-                    </li>
-                    <li>
-                       <figure>
-                        <a href="product.html">
-                        <div class="figure_img">
-                          <img src="img/gift.jpg" alt="img">
-                        </div>
-                          <figcaption class="text-center">
-                            <p>Букет 1>></p>
-                            <p>160 000</p>
-                          </figcaption>
-                        </a>
-                      </figure>
-                    </li>
-                </ul>
-            </div>
-
-            <a href="#" class="jcarousel1-control-prev">&lsaquo;</a>
-            <a href="#" class="jcarousel1-control-next">&rsaquo;</a>
-
-      
-        </div>
-
-
-    <!-- END CAROUSEL -->
-
-  </div>
-
-
-<div class="row payments null">
-  <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
-    <img src="img/mastercard.jpg" alt="img">
-  </div>
-  <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
-    <img src="img/mastercard.jpg" alt="img">
-  </div>
-  <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
-    <img src="img/mastercard.jpg" alt="img">
-  </div>
-  <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
-    <img src="img/mastercard.jpg" alt="img">
-  </div>
-  <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
-    <img src="img/mastercard.jpg" alt="img">
-  </div>
-  <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
-    <img src="img/mastercard.jpg" alt="img">
-  </div>
-</div>
-
-
-</div>
-
-
-</div> <!-- End container -->
-<!-- END PRODUCT -->
-</div> <!-- END WRAPPER -->
-<div class="null"></div>
 <hr>
 <footer class="row">
 <div class="container">
@@ -422,7 +410,7 @@
       <hr>
       <div class="row text-right">
          Создание и продвижение сайтов 
-        <a href="#">IntellectIT</a>
+        <a href="http://intellectit.by">IntellectIT</a>
       </div>
 </div>
 </footer>
