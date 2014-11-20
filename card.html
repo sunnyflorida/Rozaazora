@@ -16,7 +16,7 @@
   <![endif]-->
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper padding_wrapper">
   <header class="row">
     <div class="container">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
@@ -25,7 +25,7 @@
       <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
         <div class="row">
           <div class="col-lg-3 col-lg-offset-6 col-md-3 col-md-offset-6">
-            <a href="#">Авторизация</a>   
+            <a href="personal_data.html">Авторизация</a>   
             <a href="#">Регистрация</a>
           </div>
           <div class="col-lg-3 col-md-3">
@@ -136,24 +136,24 @@
         <a href="#"><img src="img/instagram.png" alt="img"></a>
       </div>
       
+      <div class="row greeting">
+        <h4>Введите пожелание</h4>
+          <textarea name="greeting" placeholder="Пожелание"></textarea>
+            <button id ="font1">Font1</button>
+            <button id ="font2">Font2</button>
+            <button id ="font3">Font3</button>
+        <h4>Оно будет выглядеть так:</h4>
+          <div class="greeting_styled">
+            <p> </p>
+          </div>
+          <a href="#mapmodals_cart" class="openmodal_cart" data-toggle="modal" data-id="product" role="button">
+            <button type="button" class="btn btn-large btn-primary">В корзину</button>
+          </a>
+      </div>
     </div>
   </div>
 
-  <div class="row greeting">
-    <h4>Введите пожелание</h4>
-      <textarea name="greeting" placeholder="Пожелание"></textarea>
-        <button id ="font1">Font1</button>
-        <button id ="font2">Font2</button>
-        <button id ="font3">Font3</button>
-    <h4>Оно будет выглядеть так:</h4>
-      <div class="greeting_styled">
-        <p> </p>
-      </div>
-      <br /> 
-      <a href="#mapmodals_cart" class="openmodal_cart" data-toggle="modal" data-id="product" role="button">
-        <button type="button" class="btn btn-large btn-primary">В корзину</button>
-      </a>
-  </div>
+ 
 <!-- Modal Window CART-->
   <div class="modal fade" id="mapmodals_cart">
     <div class="modal-dialog modal-lg">

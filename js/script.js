@@ -113,9 +113,19 @@ $(document).ready(function(){
         $(text).css({'font-family':'denistina', 'font-size':'25px'});
       });
 
-  });
+  
+      // $('.greeting textarea').keyup(function(eventObject){
+      //   var key = +eventObject.which;
 
-})
+      //   if (key == 13){
+      //     $('.greeting_styled').children('p').append( "<br>" );
+
+      //     // alert('oops');
+      //   }
+      // });
+
+  });
+});
 
 
 function map_init(var_lati,var_long,var_markerTitle,var_contentString){

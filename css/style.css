@@ -50,17 +50,19 @@ html, body {
   overflow: hidden;
   min-width: 500px;
 }
-.null {
-  clear: both;
-  margin-top: 50px;
-  display: block;
-  height: 290px;
-  width: 100%;
-  background-color: red;
-}
-.null:after {
+.wrapper:before,
+.wrapper:after {
 	content: "";
+	display: table;
+}
+.wrapper:after {
 	clear: both;
+}
+.wrapper {
+	zoom: 1;
+}
+.padding_wrapper {
+	padding-bottom: 300px;
 }
 
 /* HEADER--------------------------------------------------*/
@@ -387,4 +389,10 @@ input[name="phone_client"] {
 	height: 100%;
 	display: block;
 	margin: 0 auto;
+}
+
+
+/* FOOTER ---------------------------------------------------*/
+footer {
+	height: 270px;
 }
