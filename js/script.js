@@ -9,7 +9,12 @@
     $(".list-group").hide();
     $(".btn_catalog").on('click', function(){
       $(this).parent().children('div').toggle(); 
-  });
+    });
+
+    $(".search input").hide();
+    $(".search_button").on('click', function(){
+      $(".search input").toggle(); 
+    });
 
 // little pictures on product page
 	$('input:radio').change(function(){
