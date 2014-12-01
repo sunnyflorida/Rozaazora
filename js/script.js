@@ -11,9 +11,12 @@
       $(this).parent().children('div').toggle(); 
     });
 
-    $(".search input").hide();
-    $(".search_button").on('click', function(){
-      $(".search input").toggle(); 
+    $(".search_nav input").hide();
+    $(".search_nav button").on('mouseover', function(){
+      $(".search_nav input").show(); 
+    });
+    $(".search_nav input").on('mouseout', function(){
+      $(".search_nav input").hide(); 
     });
 
 // little pictures on product page

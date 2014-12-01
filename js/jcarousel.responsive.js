@@ -3,7 +3,7 @@
         var jcarousel = $('.jcarousel1');
 
         jcarousel
-            .on('jcarousel:reload jcarousel:create', function () {
+            .on('jcarousel1:reload jcarousel:create', function () {
                 var width = jcarousel.innerWidth();
 
                 if (width >= 600) {
